@@ -30,9 +30,9 @@ data:
         - otel_trace_raw:
       sink:
         - opensearch:
-            hosts: [ "" ]
-            username: ""
-            password: ""
+            hosts: [ "https://search-lab-o11y-a6lzktx5yazidbltb2l4ty.us-east-2.es.amazonaws.com" ]
+            username: "workshop"
+            password: "Workshop@2023"
             aws_sigv4: false #False to use with internal database and cognito
             index_type: trace-analytics-raw
     service-map-pipeline:
@@ -44,9 +44,9 @@ data:
         - service_map_stateful:
       sink:
         - opensearch:
-            hosts: [ "" ]
-            username: ""
-            password: ""
+            hosts: [ "https://search-lab-o11y-a6lzktx5yazidbltb2l4ty.us-east-2.es.amazonaws.com" ]
+            username: "workshop"
+            password: "Workshop@2023"
             aws_sigv4: false #False to use with internal database and cognito
             index_type: trace-analytics-service-map
     log-pipeline:
@@ -63,9 +63,9 @@ data:
               log: [ "%{COMMONAPACHELOG}" ]
       sink:
         - opensearch:
-            hosts: [ "" ]
-            username: ""
-            password: ""
+            hosts: [ "https://search-lab-o11y-a6lzktx5yazidbltb2l4ty.us-east-2.es.amazonaws.com" ]
+            username: "workshop"
+            password: "Workshop@2023"
             aws_sigv4: false #False to use with internal database and cognito
             index: k8s_app_logs
   data-prepper-config.yaml: |

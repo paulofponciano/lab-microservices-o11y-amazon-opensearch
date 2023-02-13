@@ -36,7 +36,7 @@ variable "master_user" {
 variable "master_password" {
   description = "The master password of the OpenSearch cluster."
   type        = string
-  default     = ""
+  default     = "Workshop@2023"
 }
 
 variable "master_instance_enabled" {

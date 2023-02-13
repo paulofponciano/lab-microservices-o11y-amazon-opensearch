@@ -8,7 +8,7 @@ k8s_version  = "1.24"
 
 # VPC and Subnets
 
-vpc_id         = "vpc-01a686026b0087677"
+vpc_id         = "vpc-0c496e66aaff25697"
 vpc_cidr_block = "172.29.0.0/16"
 
 public_access_cidrs = [
@@ -16,13 +16,13 @@ public_access_cidrs = [
 ]
 
 subnets = [ # Private subnets for eks cluster
-  "subnet-0715515e42a2be3ae",
-  "subnet-051290ac51f72b6be"
+  "subnet-05c30cc378277b402",
+  "subnet-03e9fd8df45175919"
 ]
 
 public_subnets = [ # Public subnets for nlb
-  "subnet-01d6a94d20781c0f5",
-  "subnet-0589031ed4e836e7e"
+  "subnet-09881eca61aeeb25a",
+  "subnet-0300707fbef49d07d"
 ]
 
 # Autoscaling configuration
