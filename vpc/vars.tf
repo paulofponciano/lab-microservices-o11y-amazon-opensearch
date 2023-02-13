@@ -15,12 +15,12 @@ variable "az2" {
 
 # USAR AQUI A IDENTIFICACAO DO AMBIENTE
 variable "customer_env" {
-  default = "ms-o11y-opensearch"
+  default = "lab-o11y"
 }
 
 # INFORME O NOME QUE IRA UTILIZAR NO CLUSTER EKS # IMPORTANTE PARA RESOURCE K8S SHARING
 variable "cluster_eks_name" {
-  default = "ms-o11y-opensearch"
+  default = "lab-o11y"
 }
 
 # CIDR VPC

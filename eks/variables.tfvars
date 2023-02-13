@@ -1,7 +1,7 @@
 # Project info
 
-cluster_name = "ms-o11y-opensearch"
-project      = "o11y"
+cluster_name = "lab-o11y"
+project      = "o11y with otel and aos"
 project_env  = "dev"
 region       = "us-east-2"
 k8s_version  = "1.24"
@@ -30,7 +30,7 @@ public_subnets = [ # Public subnets for nlb
 instance_type = "t3.medium"
 desired_size  = "2"
 min_size      = "1"
-max_size      = "3"
+max_size      = "4"
 
 # Disk
 

@@ -1,7 +1,7 @@
 variable "cluster_name" {
   description = "The name of the OpenSearch cluster."
   type        = string
-  default     = "ms-o11y-opensearch"
+  default     = "lab-o11y"
 }
 
 
