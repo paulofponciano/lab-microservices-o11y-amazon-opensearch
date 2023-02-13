@@ -30,7 +30,7 @@ data:
         - otel_trace_raw:
       sink:
         - opensearch:
-            hosts: [ "https://search-lab-o11y-a6lzktx5yazidbltb2l4ty.us-east-2.es.amazonaws.com" ]
+            hosts: [ "https://search-lab-o11y-**********************.us-east-2.es.amazonaws.com" ]
             username: "workshop"
             password: "Workshop@2023"
             aws_sigv4: false #False to use with internal database and cognito
@@ -44,7 +44,7 @@ data:
         - service_map_stateful:
       sink:
         - opensearch:
-            hosts: [ "https://search-lab-o11y-a6lzktx5yazidbltb2l4ty.us-east-2.es.amazonaws.com" ]
+            hosts: [ "https://search-lab-o11y-**********************.us-east-2.es.amazonaws.com" ]
             username: "workshop"
             password: "Workshop@2023"
             aws_sigv4: false #False to use with internal database and cognito
@@ -63,7 +63,7 @@ data:
               log: [ "%{COMMONAPACHELOG}" ]
       sink:
         - opensearch:
-            hosts: [ "https://search-lab-o11y-a6lzktx5yazidbltb2l4ty.us-east-2.es.amazonaws.com" ]
+            hosts: [ "https://search-lab-o11y-**********************.us-east-2.es.amazonaws.com" ]
             username: "workshop"
             password: "Workshop@2023"
             aws_sigv4: false #False to use with internal database and cognito
